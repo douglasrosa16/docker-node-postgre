@@ -4,9 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "repository": "https://github.com/douglasrosa16/docker-node-postgre.git",
+  "author": "Douglas Oliveira <douglasoliveira163425@gmail.com>",
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }
+  

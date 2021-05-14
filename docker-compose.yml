@@ -1,0 +1,12 @@
+version: "3"  #Versão do docker-compose
+
+services: #Serviços
+    app: #Nome do serviço
+        build: . #. é a localização atual do container
+        command: npm start #comando que irá iniciar o container
+        ports: 
+            - "3000:3000" #Quando chamar a porta 3000 externa irá executar a 3000 do container
+        volumes:
+            - .:/usr/app  #Fica monitorando a pasta atual e reflete as alterações para dentro do container
+    postgres:
+        image: 'postgres:latest'
