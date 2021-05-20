@@ -29,6 +29,14 @@ module.exports = {
           type: Sequelize.INTEGER,
           allowNull: false,
         },
+        cidade: {
+          type: Sequelize.INTEGER,
+          allowNull: false,
+        },            
+        estado: {
+          type: Sequelize.INTEGER,
+          allowNull: false,
+        },    
         created_at: {
           type: Sequelize.DATE,
           allowNull: false,
