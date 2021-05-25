@@ -5,7 +5,9 @@ class Address extends Model {
         super.init({
             cep: DataTypes.STRING,
             rua: DataTypes.STRING,
-            numero: DataTypes.INTEGER
+            numero: DataTypes.INTEGER,
+            cidade: DataTypes.STRING,
+            estado: DataTypes.STRING
         },
         {
             sequelize: connection

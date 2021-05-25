@@ -4,7 +4,8 @@ class User extends Model {
     static init(connection){
         super.init({
             name: DataTypes.STRING,
-            email: DataTypes.STRING
+            email: DataTypes.STRING,
+            lastName: DataTypes.STRING,
         },
         {
             sequelize: connection
@@ -13,7 +14,7 @@ class User extends Model {
 
     static associate(models){
         this.hasMany(models.Address, { foreignKey: 'user_id', as: 'addresses' });
-        this.belongsToMany(models.Tech, { foreignKey: 'user_id', through: 'user_techs', as: 'techs' });        
+        this.belongsToMany(models.Tech, { foreignKey: 'user_id', through: 'user_techs', as: 'techs' });
     }
 
 }

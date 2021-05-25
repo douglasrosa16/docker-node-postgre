@@ -15,4 +15,4 @@ routes.post('/users/:user_id/addresses', AddressesController.store);
 routes.get('/users/:user_id/techs', TechController.index);
 routes.post('/users/:user_id/techs', TechController.store);
 
-module.exports = routes; 
+module.exports = routes;

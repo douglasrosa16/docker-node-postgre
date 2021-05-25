@@ -30,11 +30,11 @@ module.exports = {
           allowNull: false,
         },
         cidade: {
-          type: Sequelize.INTEGER,
+          type: Sequelize.STRING,
           allowNull: false,
         },            
         estado: {
-          type: Sequelize.INTEGER,
+          type: Sequelize.STRING,
           allowNull: false,
         },    
         created_at: {
