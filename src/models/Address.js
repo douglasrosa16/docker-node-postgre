@@ -7,7 +7,8 @@ class Address extends Model {
             rua: DataTypes.STRING,
             numero: DataTypes.INTEGER,
             cidade: DataTypes.STRING,
-            estado: DataTypes.STRING
+            estado: DataTypes.STRING,
+            pais: DataTypes.STRING
         },
         {
             sequelize: connection
