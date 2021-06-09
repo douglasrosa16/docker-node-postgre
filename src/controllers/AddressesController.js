@@ -14,26 +14,29 @@ module.exports = {
     },
 
     async store(req, res){
-        const { user_id } = req.params; 
-        
-        const { cep, numero, rua } = req.body;
-        
-        
+        const { user_id } = req.params;
+
+        const { cep, numero, rua, cidade, pais, estado } = req.body;
+
+
         const user = await User.findByPk(user_id);
-        
-        
+
+
         if (!user) {
             return res.status(400).json({error: 'Usuário não encontrado'});
         }
-        
+
         const address = await Address.create({
-            cep, 
+            cep,
             rua,
             numero,
+            cidade,
+            pais,
+            estado,
             user_id,
         });
 
         return res.json(address);
-        
+
     }
 }
