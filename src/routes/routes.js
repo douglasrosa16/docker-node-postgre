@@ -1,8 +1,8 @@
 const express = require('express');
 
-const UserController = require('./controllers/UserController');
-const AddressController = require('./controllers/AddressesController');
-const TechController = require('./controllers/TechController');
+const UserController = require('../controllers/UserController');
+const AddressController = require('../controllers/AddressesController');
+const TechController = require('../controllers/TechController');
 
 const routes = express.Router();
 
