@@ -25,7 +25,7 @@ class Authenticate {
           expiresIn: '1d', //Quando expira - Pesquisar Refresh Token
         }
       );
-      console.log(token);
+
       return {user, token};
     } else {
       throw new Error('Email/Senha incorreto');

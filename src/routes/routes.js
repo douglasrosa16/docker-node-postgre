@@ -11,6 +11,7 @@ routes.use('/sessions', sessionsRouter);
 
 routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
+routes.get('/users/:user_id/detail', UserController.show);
 
 routes.get('/users/:user_id/addresses', AddressController.index);
 routes.post('/users/:user_id/addresses', AddressController.store);
