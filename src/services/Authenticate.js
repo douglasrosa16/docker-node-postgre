@@ -1,5 +1,6 @@
 import User from '../models/User';
 //import { compare } from 'bcryptjs'
+import { sign } from 'jsonwebtoken';
 
 class Authenticate {
   async execute({ email, password }){
@@ -15,9 +16,17 @@ class Authenticate {
 
     //const passwordIgual = await compare(password, user.senha); //Retorna true se é igual
 
-    //Se chegou até aqui Usuário autenticado
     if (password === user.senha){
-      return user.dataValues;
+      const token = sign(
+        {},       //Payload - Permissões do usuário
+        '101010', //Chave Secreta
+        { //Configurações do Token
+          subject: user.id.toString(), //ID do usuário - A quem pertence o Token
+          expiresIn: '1d', //Quando expira - Pesquisar Refresh Token
+        }
+      );
+      console.log(token);
+      return {user, token};
     } else {
       throw new Error('Email/Senha incorreto');
     }
