@@ -3,7 +3,7 @@ import User from '../models/User';
 
 class Authenticate {
   async execute({ email, password }){
-    const user = await User.findOne({where : {email: email, senha: password}})
+    const user = await User.findOne({where : {email: email}});
 
     if (!user){
       throw new Error('Email/Senha incorreto');
@@ -16,12 +16,11 @@ class Authenticate {
     //const passwordIgual = await compare(password, user.senha); //Retorna true se é igual
 
     //Se chegou até aqui Usuário autenticado
-
-    return {
-      user
+    if (password === user.senha){
+      return user.dataValues;
+    } else {
+      throw new Error('Email/Senha incorreto');
     }
-
-
   }
 }
 

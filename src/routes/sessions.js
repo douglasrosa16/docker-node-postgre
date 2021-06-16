@@ -9,13 +9,14 @@ sessionsRouter.post('/', async(request, response) => {
 
     const authenticateUser = new Authenticate();
     //Passa o email e senha e aguarda a resposta da autenticação
-    const { token } = await authenticateUser.execute({
+    const user = await authenticateUser.execute({
       email,
       password,
     });
-    console.log(token);
 
-    return response.json({ token });
+    delete user.senha; //Remover a senha para retornar o usuário sem senha
+
+    return response.json({ user });
 
   } catch(err) {
     return response.status(400).json({ error: err.message });
