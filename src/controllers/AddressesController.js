@@ -4,7 +4,7 @@ const User = require("../models/User");
 module.exports = {
     async index(req, res){
         const { user_id } = req.params;
-
+        console.log(req.user.id);
         const user = await User.findByPk(user_id, {
             include: { association: 'addresses' }
         });

@@ -1,6 +1,8 @@
 import User from '../models/User';
 //import { compare } from 'bcryptjs'
 import { sign } from 'jsonwebtoken';
+import authConfig from '../config/auth';
+
 
 class Authenticate {
   async execute({ email, password }){
@@ -19,10 +21,10 @@ class Authenticate {
     if (password === user.senha){
       const token = sign(
         {},       //Payload - Permissões do usuário
-        '101010', //Chave Secreta
+        authConfig.jwt.secret, //Chave Secreta
         { //Configurações do Token
           subject: user.id.toString(), //ID do usuário - A quem pertence o Token
-          expiresIn: '1d', //Quando expira - Pesquisar Refresh Token
+          expiresIn: authConfig.jwt.expiresIn, //Quando expira - Pesquisar Refresh Token
         }
       );
 
