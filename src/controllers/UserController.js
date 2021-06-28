@@ -8,9 +8,9 @@ module.exports = {
     },
 
     async store(req, res){
-        const { name, email, sobrenome, sobre, senha } = req.body;
+        const { name, email, lastname, about, password } = req.body;
 
-        const user = await User.create({name, email, sobrenome, sobre, senha});
+        const user = await User.create({name, email, lastname, about, password});
 
         return res.json(user);
     },
@@ -24,7 +24,7 @@ module.exports = {
         throw new Error('Usuário não encontrado');
       }
 
-      delete user.dataValues.senha;
+      delete user.dataValues.password;
 
       return res.json(user);
     }

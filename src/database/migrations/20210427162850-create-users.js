@@ -17,18 +17,27 @@ module.exports = {
         email: {
           type: Sequelize.STRING,
           allowNull: true,
+          unique: true,
         },
-        sobrenome: {
+        lastname: {
           type: Sequelize.STRING,
           allowNull: true,
         },
-        sobre: {
+        about: {
           type: Sequelize.STRING,
           allowNull: true,
         },
-        senha: {
+        password: {
           type: Sequelize.STRING,
           allowNull: false,
+        },
+        permission: {
+          type: Sequelize.STRING,
+          allowNull: true
+        },
+        cpf: {
+          type: Sequelize.STRING,
+          allowNull: true,
         },
         created_at: {
           type: Sequelize.DATE,

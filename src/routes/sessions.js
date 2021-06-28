@@ -14,7 +14,7 @@ sessionsRouter.post('/', async(request, response) => {
       password,
     });
 
-    delete user.senha; //Remover a senha para retornar o usuário sem senha
+    delete user.password; //Remover a senha para retornar o usuário sem senha
 
     return response.json({ user, token });
 

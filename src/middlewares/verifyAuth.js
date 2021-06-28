@@ -8,7 +8,9 @@ export default function verifyAuth(request, response, next){
   const authHedaer = request.headers.authorization;
 
   if(!authHedaer){
-    throw new Error('Token JWT não existe.');
+    response.status(401);
+
+    return response.send({message:'Token JWT não existe.'});
   }
 
   //Bearer Hash
@@ -32,6 +34,8 @@ export default function verifyAuth(request, response, next){
 
     return next();
   } catch (err){
-    throw new Error('Token JWT Invalido')
+      response.status(401);
+
+      response.send({message:'Token JWT Invalido'});
   }
 }
