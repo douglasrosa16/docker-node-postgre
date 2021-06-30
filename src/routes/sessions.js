@@ -15,11 +15,14 @@ sessionsRouter.post('/', async(request, response) => {
     });
 
     delete user.password; //Remover a senha para retornar o usuário sem senha
-
-    return response.json({ user, token });
+    delete user.dataValues.password;
+    if(user){
+      return response.json({ user, token });
+    }
+    return response.status(400).json({ error: 'Usuário não encontrado' });
 
   } catch(err) {
-    return response.status(400).json({ error: err.message });
+    return response.status(400).json({ error: 'Usuário não encontrado' });
   }
 });
 
