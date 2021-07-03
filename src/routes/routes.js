@@ -19,7 +19,7 @@ routes.use('/sessions', sessionsRouter);
 
 routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
-routes.get('/users/:user_id/detail', verifyAuth, UserController.show);
+routes.get('/users/:user_id/detail', UserController.show);
 
 routes.get('/users/:user_id/addresses', verifyAuth,AddressController.index);
 routes.post('/users/:user_id/addresses', AddressController.store);
@@ -30,8 +30,8 @@ routes.post('/users/:user_id/techs', TechController.store);
 routes.get('/:user_id/consumer', ConsumerController.index);
 routes.post('/:user_id/consumer', ConsumerController.store);
 
-routes.get('/:user_id/service_provider', ServiceProvider.index);
-routes.post('/:user_id/service_provider', ServiceProvider.store);
+routes.get('/provider/:user_id', ServiceProvider.index);
+routes.post('/provider/:user_id', ServiceProvider.store);
 
 routes.get('/:service_provider_id/service', Service.index);
 routes.post('/:service_provider_id/service', Service.store);
