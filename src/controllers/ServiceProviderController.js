@@ -3,14 +3,13 @@ const ServiceProvider = require('../models/ServiceProvider');
 
 module.exports = {
   async index(req, res){
-    const { user_id } = req.params;
 
-    const user = await User.findByPk(user_id, {
+    const user = await User.findAll({
         include: { association: 'service-providers' }
     });
 
 
-    return res.json(user.service-providers);
+    return res.json(user);
   },
   async store(req, res){
     const { user_id } = req.params;

@@ -1,3 +1,4 @@
+const { destroy } = require('../models/User');
 const User = require('../models/User');
 
 module.exports = {
@@ -27,5 +28,12 @@ module.exports = {
       delete user.dataValues.password;
 
       return res.json(user);
+    },
+
+    async destroy(req, res){
+      const users = await User.destroy({
+        where: {},
+      });
+      return res.json(users)
     }
 }
