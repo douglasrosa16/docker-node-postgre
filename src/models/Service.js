@@ -14,7 +14,7 @@ class Service extends Model {
   }
 
   static associate(models){
-    this.belongsTo(models.ServiceProvider, { foreignKey: 'service_providers_id', as: 'service_provider' });
+    this.belongsTo(models.ServiceProvider, { foreignKey: 'service_providers_id', as: 'service_providers' });
   }
 }
 

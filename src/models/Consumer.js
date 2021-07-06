@@ -5,13 +5,14 @@ class Consumer extends Model {
     super.init({
       photo: DataTypes.STRING
     }, {
-      sequelize
+      sequelize,
+      tableName: 'consumers'
     })
   }
 
   static associate(models){
-    this.belongsTo(models.User, { foreignKey: 'user_id', as: 'user' });
-}
+    this.belongsTo(models.User, { foreignKey: 'user_id', as: 'users' });
+  }
 }
 
 module.exports = Consumer;

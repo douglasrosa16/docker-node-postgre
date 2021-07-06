@@ -3,12 +3,12 @@ const Consumer = require('../models/Consumer');
 
 module.exports = {
   async index(req, res){
-    const { user_id } = req.params;
 
-    const user = await User.findByPk(user_id, {
+    const user = await User.findAll({
         include: { association: 'consumers' }
     });
-    return res.json(user.consumers);
+
+    return res.json(user);
   },
 
   async store(req, res){
@@ -25,5 +25,14 @@ module.exports = {
     });
 
     return res.json(consumers);
+  },
+
+  async show(req, res){
+    const { user_id } = req.params;
+
+    const user = await User.findByPk(user_id, {
+        include: { association: 'consumers' }
+    });
+    return res.json(user.consumers);
   }
 }

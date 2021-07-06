@@ -28,14 +28,17 @@ routes.post('/users/:user_id/addresses', AddressController.store);
 routes.get('/users/:user_id/techs', TechController.index);
 routes.post('/users/:user_id/techs', TechController.store);
 
-routes.get('/:user_id/consumer', ConsumerController.index);
-routes.post('/:user_id/consumer', ConsumerController.store);
+routes.get('/consumers', ConsumerController.index);
+routes.post('/consumer/:user_id', ConsumerController.store);
+routes.get('/consumer/:user_id', ConsumerController.show);
 
 routes.get('/providers', ServiceProvider.index);
 routes.post('/provider/:user_id', ServiceProvider.store);
+routes.get('/provider/:user_id', ServiceProvider.show);
 
-routes.get('/:service_provider_id/service', Service.index);
-routes.post('/:service_provider_id/service', Service.store);
+routes.get('/services/:service_provider_id', Service.index);
+routes.post('/services/:service_provider_id', Service.store);
+routes.get('/services/:service_provider_id/:service', Service.show);
 
 module.exports = routes;
 

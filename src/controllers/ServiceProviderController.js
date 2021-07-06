@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const ServiceProvider = require('../models/ServiceProvider');
+const { show } = require('./ConsumerController');
 
 module.exports = {
   async index(req, res){
@@ -8,9 +9,9 @@ module.exports = {
         include: { association: 'service-providers' }
     });
 
-
     return res.json(user);
   },
+
   async store(req, res){
     const { user_id } = req.params;
 
@@ -25,5 +26,14 @@ module.exports = {
     });
 
     return res.json(service_provider);
+  },
+
+  async show (req, res){
+    const { user_id } = req.params;
+
+    const user = await User.findByPk(user_id, {
+        include: { association: 'service-providers' }
+    });
+    return res.json(user.service-providers);
   }
 }
