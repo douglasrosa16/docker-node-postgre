@@ -1,13 +1,10 @@
 const User = require('../models/User');
 const ServiceProvider = require('../models/ServiceProvider');
-const { show } = require('./ConsumerController');
 
 module.exports = {
   async index(req, res){
 
-    const user = await User.findAll({
-        include: { association: 'service-providers' }
-    });
+    const user = await ServiceProvider.findAll({include: [{model: User, as: "users"}]});
 
     return res.json(user);
   },

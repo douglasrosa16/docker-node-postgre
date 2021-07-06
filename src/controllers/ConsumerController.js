@@ -4,9 +4,7 @@ const Consumer = require('../models/Consumer');
 module.exports = {
   async index(req, res){
 
-    const user = await User.findAll({
-        include: { association: 'consumers' }
-    });
+    const user = await Consumer.findAll({include: [{model: User, as: "users"}]});
 
     return res.json(user);
   },
