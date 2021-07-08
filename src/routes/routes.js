@@ -5,7 +5,7 @@ const AddressController = require('../controllers/AddressesController');
 const TechController = require('../controllers/TechController');
 const ConsumerController = require('../controllers/ConsumerController');
 const ServiceProvider = require('../controllers/ServiceProviderController');
-const Service = require('../controllers/Service');
+const Service = require('../controllers/ServiceController');
 
 import verifyAuth from '../middlewares/verifyAuth';
 

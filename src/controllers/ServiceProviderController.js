@@ -4,9 +4,9 @@ const ServiceProvider = require('../models/ServiceProvider');
 module.exports = {
   async index(req, res){
 
-    const user = await ServiceProvider.findAll({include: [{model: User, as: "users"}]});
+    const services_providers = await ServiceProvider.findAll({include: [{model: User, as: "users"}]});
 
-    return res.json(user);
+    return res.json(services_providers);
   },
 
   async store(req, res){
@@ -31,6 +31,6 @@ module.exports = {
     const user = await User.findByPk(user_id, {
         include: { association: 'service-providers' }
     });
-    return res.json(user.service-providers);
+    return res.json(user);
   }
 }

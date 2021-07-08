@@ -8,6 +8,7 @@ class User extends Model {
       lastname: DataTypes.STRING,
       about: DataTypes.STRING,
       password: DataTypes.STRING,
+      permission: DataTypes.STRING,
     }, {
       sequelize
     })
