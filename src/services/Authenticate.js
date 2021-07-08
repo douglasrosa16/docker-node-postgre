@@ -1,5 +1,5 @@
 import User from '../models/User';
-//import { compare } from 'bcryptjs'
+import { compare } from 'bcryptjs'
 import { sign } from 'jsonwebtoken';
 import authConfig from '../config/auth';
 
@@ -16,9 +16,13 @@ class Authenticate {
       //password - senha não criptografada
       //Utilizar bcryptjs para criptografar
 
-      //const passwordIgual = await compare(password, user.senha); //Retorna true se é igual
+      const passwordIgual = await compare(password, user.password); //Retorna true se é igual
 
-      if (password === user.password){
+      if(!passwordIgual){
+        throw new Error('Email/Senha incorreto');
+      }
+
+      if (passwordIgual){
         const token = sign(
           {},       //Payload - Permissões do usuário
           authConfig.jwt.secret, //Chave Secreta
