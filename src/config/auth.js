@@ -2,7 +2,7 @@ require('dotenv').config()
 
 export default {
   jwt: {
-    secret: '101010',
+    secret: process.env.JWT_SECRET,
     expiresIn: process.env.JTW_EXPIRES_IN
   }
 }
