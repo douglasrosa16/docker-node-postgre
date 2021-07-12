@@ -1,4 +1,4 @@
-import { hash } from 'bcryptjs';
+const { hash } = require('bcryptjs');
 const { destroy } = require('../models/User');
 const User = require('../models/User');
 

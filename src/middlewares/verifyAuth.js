@@ -1,8 +1,8 @@
-import { verify } from 'jsonwebtoken';
+const { verify } = require('jsonwebtoken');
 
-import authConfig from '../config/auth';
+const authConfig = require('../config/auth');
 
-export default function verifyAuth(request, response, next){
+module.exports = function verifyAuth(request, response, next){
   //Validação do Token JWT
 
   const authHedaer = request.headers.authorization;

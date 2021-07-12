@@ -1,3 +1,4 @@
+
 import { Router } from 'express';
 import Authenticate from '../services/Authenticate';
 
@@ -26,4 +27,5 @@ sessionsRouter.post('/', async(request, response) => {
   }
 });
 
-export default sessionsRouter;
+//export default sessionsRouter;  //Antes
+module.exports = {sessionsRouter};

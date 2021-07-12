@@ -10,6 +10,11 @@
     "test": "NODE_ENV=test jest",
     "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
@@ -26,8 +31,11 @@
   "repository": "https://github.com/douglasrosa16/docker-node-postgre.git",
   "author": "Douglas Oliveira <douglasoliveira163425@gmail.com>",
   "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "babel-jest": "^27.0.6",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "faker": "^5.5.3",
     "jest": "^27.0.6",
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.2",

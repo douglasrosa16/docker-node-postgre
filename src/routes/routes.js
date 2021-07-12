@@ -7,9 +7,9 @@ const ConsumerController = require('../controllers/ConsumerController');
 const ServiceProvider = require('../controllers/ServiceProviderController');
 const Service = require('../controllers/ServiceController');
 
-import verifyAuth from '../middlewares/verifyAuth';
+const verifyAuth = require('../middlewares/verifyAuth');
 
-import sessionsRouter from './sessions';
+const {sessionsRouter} =  require('./sessions');
 
 const routes = express.Router();
 
