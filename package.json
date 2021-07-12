@@ -35,6 +35,7 @@
     "babel-jest": "^27.0.6",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "factory-girl": "^5.0.4",
     "faker": "^5.5.3",
     "jest": "^27.0.6",
     "sequelize-cli": "^6.2.0",
