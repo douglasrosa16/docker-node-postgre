@@ -32,5 +32,20 @@ describe("Autenticacao", () => {
 
     expect(response.status).toBe(200);
   });
+
+  it("não deveria autenticar com credenciais invalidas", async () => {
+    const user = await User.create({email: faker.internet.email(), password: faker.internet.password(), name: faker.name.findName()});
+
+    const newPassword = faker.internet.password();
+    const response = await request(app)
+    .post("/sessions")
+    .send({
+      email: user.email,
+      password: newPassword
+    });
+
+    expect(response.status).toBe(401);
+
+  });
 });
 

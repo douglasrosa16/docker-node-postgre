@@ -20,10 +20,10 @@ sessionsRouter.post('/', async(request, response) => {
     if(user){
       return response.status(200).json({ user, token });
     }
-    return response.status(400).json({ error: 'Usuário não encontrado' });
+    return response.status(401).json({ error: 'Usuário não encontrado' });
 
   } catch(err) {
-    return response.status(400).json({ error: 'Usuário não encontrado' });
+    return response.status(401).json({ error: 'Usuário não encontrado' });
   }
 });
 
