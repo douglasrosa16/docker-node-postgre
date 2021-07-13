@@ -1,7 +1,7 @@
-import User from '../models/User';
-import { compare } from 'bcryptjs';
-import { sign } from 'jsonwebtoken';
-import authConfig from '../config/auth';
+const User = require('../models/User');
+const { compare } = require('bcryptjs');
+const { sign } = require('jsonwebtoken');
+const authConfig = require('../config/auth');
 
 
 class Authenticate {
@@ -45,4 +45,5 @@ class Authenticate {
   }
 }
 
-export default Authenticate;
+//export default Authenticate;
+module.exports = Authenticate;

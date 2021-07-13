@@ -1,6 +1,6 @@
 
-import { Router } from 'express';
-import Authenticate from '../services/Authenticate';
+const { Router } = require('express');
+const Authenticate = require('../services/Authenticate');
 
 const sessionsRouter = Router();
 
@@ -18,7 +18,7 @@ sessionsRouter.post('/', async(request, response) => {
     delete user.password; //Remover a senha para retornar o usuário sem senha
     delete user.dataValues.password;
     if(user){
-      return response.json({ user, token });
+      return response.status(200).json({ user, token });
     }
     return response.status(400).json({ error: 'Usuário não encontrado' });
 

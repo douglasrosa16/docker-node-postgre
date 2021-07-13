@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">86.67% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>13/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">86.67% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>13/15</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -89,57 +89,57 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-import { Router } from 'express';
-import Authenticate from '../services/Authenticate';
+const { Router } = require('express');
+const Authenticate = require('../services/Authenticate');
 &nbsp;
-const sessionsRouter = <span class="cstat-no" title="statement not covered" >Router();</span>
+const sessionsRouter = Router();
 &nbsp;
-<span class="cstat-no" title="statement not covered" >sessionsRouter.post('/', <span class="fstat-no" title="function not covered" >as</span>ync(request, response) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  try {</span>
-    const { email, password } = <span class="cstat-no" title="statement not covered" >request.body;</span>
+sessionsRouter.post('/', async(request, response) =&gt; {
+  try {
+    const { email, password } = request.body;
 &nbsp;
-    const authenticateUser = <span class="cstat-no" title="statement not covered" >new Authenticate();</span>
+    const authenticateUser = new Authenticate();
     //Passa o email e senha e aguarda a resposta da autenticação
-    const { user, token } = <span class="cstat-no" title="statement not covered" >await authenticateUser.execute({</span>
+    const { user, token } = await authenticateUser.execute({
       email,
       password,
     });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    delete user.password; </span>//Remover a senha para retornar o usuário sem senha
-<span class="cstat-no" title="statement not covered" >    delete user.dataValues.password;</span>
-<span class="cstat-no" title="statement not covered" >    if(user){</span>
-<span class="cstat-no" title="statement not covered" >      return response.json({ user, token });</span>
+    delete user.password; //Remover a senha para retornar o usuário sem senha
+    delete user.dataValues.password;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if(user){
+      return response.status(200).json({ user, token });
     }
 <span class="cstat-no" title="statement not covered" >    return response.status(400).json({ error: 'Usuário não encontrado' });</span>
 &nbsp;
@@ -149,7 +149,7 @@ const sessionsRouter = <span class="cstat-no" title="statement not covered" >Rou
 });
 &nbsp;
 //export default sessionsRouter;  //Antes
-<span class="cstat-no" title="statement not covered" >module.exports = {sessionsRouter};</span>
+module.exports = {sessionsRouter};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -157,7 +157,7 @@ const sessionsRouter = <span class="cstat-no" title="statement not covered" >Rou
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Jul 12 2021 12:49:30 GMT-0400 (Horário Padrão do Amazonas)
+                at Tue Jul 13 2021 12:21:39 GMT-0400 (Horário Padrão do Amazonas)
             </div>
         </div>
         <script src="../../prettify.js"></script>

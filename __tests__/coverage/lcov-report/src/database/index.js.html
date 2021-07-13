@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/22</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/22</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,60 +84,60 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const Sequelize = <span class="cstat-no" title="statement not covered" >require('sequelize');</span>
-const dbConfig = <span class="cstat-no" title="statement not covered" >require('../config/database');</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const Sequelize = require('sequelize');
+const dbConfig = require('../config/database');
 &nbsp;
-const User = <span class="cstat-no" title="statement not covered" >require('../models/User');</span>
-const Address = <span class="cstat-no" title="statement not covered" >require('../models/Address');</span>
-const Tech = <span class="cstat-no" title="statement not covered" >require('../models/Tech');</span>
-const ServiceProvider = <span class="cstat-no" title="statement not covered" >require('../models/ServiceProvider');</span>
-const Consumer = <span class="cstat-no" title="statement not covered" >require('../models/Consumer');</span>
-const Service = <span class="cstat-no" title="statement not covered" >require('../models/Service');</span>
+const User = require('../models/User');
+const Address = require('../models/Address');
+const Tech = require('../models/Tech');
+const ServiceProvider = require('../models/ServiceProvider');
+const Consumer = require('../models/Consumer');
+const Service = require('../models/Service');
 &nbsp;
-const connection = <span class="cstat-no" title="statement not covered" >new Sequelize(dbConfig);</span>
+const connection = new Sequelize(dbConfig);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >User.init(connection);</span>
-<span class="cstat-no" title="statement not covered" >Address.init(connection);</span>
-<span class="cstat-no" title="statement not covered" >Tech.init(connection);</span>
-<span class="cstat-no" title="statement not covered" >ServiceProvider.init(connection);</span>
-<span class="cstat-no" title="statement not covered" >Consumer.init(connection);</span>
-<span class="cstat-no" title="statement not covered" >Service.init(connection);</span>
+User.init(connection);
+Address.init(connection);
+Tech.init(connection);
+ServiceProvider.init(connection);
+Consumer.init(connection);
+Service.init(connection);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >User.associate(connection.models);</span>
-<span class="cstat-no" title="statement not covered" >Address.associate(connection.models);</span>
-<span class="cstat-no" title="statement not covered" >Tech.associate(connection.models);</span>
-<span class="cstat-no" title="statement not covered" >ServiceProvider.associate(connection.models);</span>
-<span class="cstat-no" title="statement not covered" >Consumer.associate(connection.models);</span>
-<span class="cstat-no" title="statement not covered" >Service.associate(connection.models);</span>
+User.associate(connection.models);
+Address.associate(connection.models);
+Tech.associate(connection.models);
+ServiceProvider.associate(connection.models);
+Consumer.associate(connection.models);
+Service.associate(connection.models);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >module.exports = connection;</span>
+module.exports = connection;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -145,7 +145,7 @@ const connection = <span class="cstat-no" title="statement not covered" >new Seq
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Jul 12 2021 12:49:30 GMT-0400 (Horário Padrão do Amazonas)
+                at Tue Jul 13 2021 12:21:39 GMT-0400 (Horário Padrão do Amazonas)
             </div>
         </div>
         <script src="../../prettify.js"></script>
