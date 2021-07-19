@@ -17,8 +17,8 @@ deploy:
   region: "us-east-2"
   app: "prest_serv_back"
   env: "Prestservback-env"
-  bucket_name: "elasticbeanstalk-us-east-2-059030135428"
-  bucket_path: "prest_serv_back"
+  bucket_name: "prestacaoservicoback"
+  bucket_path: "prestacaoservicoback"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
