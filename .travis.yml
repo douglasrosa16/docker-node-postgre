@@ -14,13 +14,13 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
   region: "us-east-2"
   app: "prest_serv_back"
   env: "Prestservback-env"
   bucket_name: "prestacaoservicoback"
-  bucket_path: "prestacaoservicoback"
-  on:
-    branch: main
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
   skip_cleanup: true
+  on:
+    branch: master
