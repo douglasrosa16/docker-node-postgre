@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 #Iniciar uma porta que será ouvida
-EXPOSE 3000
+EXPOSE 3333
 
 #Executar o comando quando finalizar a execução do Dockerfile - Vai iniciar o node
 CMD ["npm","start"]
