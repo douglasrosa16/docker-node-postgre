@@ -20,9 +20,9 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "us-east-2"
-  app: "prest_serv_back"
-  env: "Prestservback-env"
-  bucket_name: "prestacaoservicoback"
+  app: "prestacaoservback"
+  env: "Prestacaoservback-env"
+  bucket_name: "prestacaoservback"
   skip_cleanup: true
   on:
     branch: master
