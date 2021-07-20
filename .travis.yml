@@ -7,10 +7,13 @@ services:
   - docker
 
 before_install:
-  - docker build -t douglasrosa16/docker-back-postgres -f Dockerfile .
+  - docker build -t douglasrosa16/docker-back-postgres -f Dockerfile.dev .
+
+services:
+  - docker
 
 script:
-  - docker run douglasrosa16/docker-back-postgres npm run test -- --coverage #Fazer isso para executar os testes e encerrar
+  - docker run -e CI=true douglasrosa16/docker-back-postgres npm run test -- --coverage #Fazer isso para executar os testes e encerrar
 
 deploy:
   provider: elasticbeanstalk
