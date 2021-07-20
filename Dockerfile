@@ -12,11 +12,10 @@ RUN npm install
 
 #Copia todos os arquivos do projeto atual para dentro do Container
 #Criar .dockerignore para não copiar o node_modules pois foi criado no npm install
-COPY . . 
+COPY . .
 
 #Iniciar uma porta que será ouvida
 EXPOSE 3000
 
 #Executar o comando quando finalizar a execução do Dockerfile - Vai iniciar o node
 CMD ["npm","start"]
-
