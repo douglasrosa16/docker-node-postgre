@@ -22,7 +22,8 @@ deploy:
   region: "us-east-2"
   app: "prestacaoservback"
   env: "Prestacaoservback-env"
-  bucket_name: "prestacaoservback"
+  bucket_name: "bucket name"
+  bucket_path: "prestacaoservback"
   skip_cleanup: true
   on:
     branch: master
