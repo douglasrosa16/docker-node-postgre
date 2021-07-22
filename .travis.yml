@@ -20,7 +20,7 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-  region: "us-east-2"
+  region: "sa-east-1"
   app: "servemaisbackend"
   env: "Servemaisbackend-env"
   bucket_name: "servemaisbackend"
