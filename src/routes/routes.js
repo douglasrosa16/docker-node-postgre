@@ -40,5 +40,6 @@ routes.get('/services/:service_provider_id', Service.index);
 routes.post('/services/:service_provider_id', Service.store);
 routes.get('/services/:service_provider_id/:service', Service.show);
 
+
 module.exports = routes;
 
