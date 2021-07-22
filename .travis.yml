@@ -21,9 +21,9 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "us-east-2"
-  app: "backendprestserv"
-  env: "Backendprestserv-env"
-  bucket_name: "backendprestserv"
+  app: "servemaisbackend"
+  env: "Servemaisbackend-env"
+  bucket_name: "servemaisbackend"
   skip_cleanup: true
   on:
     branch: master
