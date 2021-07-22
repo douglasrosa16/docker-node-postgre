@@ -7,7 +7,7 @@ services:
   - docker
 
 before_install:
-  - gem 'aws-sdk', '~> 3'
+  - gem install bundler -v '< 3'
   - docker build -t douglasrosa16/docker-back-postgres -f Dockerfile.dev .
 
 services:
