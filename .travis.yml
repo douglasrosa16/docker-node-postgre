@@ -20,10 +20,10 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-  region: "sa-east-1"
-  app: "servemaisbackend"
-  env: "Servemaisbackend-env"
-  bucket_name: "elasticbeanstalk-sa-east-1-059030135428"
+  region: "us-west-2"
+  app: "serveplusbackend"
+  env: "Serveplusbackend-env"
+  bucket_name: "serveplus"
   skip_cleanup: true
   on:
     branch: master
