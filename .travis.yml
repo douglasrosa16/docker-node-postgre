@@ -23,7 +23,7 @@ deploy:
   region: "sa-east-1"
   app: "servemaisbackend"
   env: "Servemaisbackend-env"
-  bucket_name: "servemaisbackend"
+  bucket_name: "elasticbeanstalk-sa-east-1-059030135428"
   skip_cleanup: true
   on:
     branch: master
