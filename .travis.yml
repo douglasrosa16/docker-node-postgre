@@ -7,7 +7,7 @@ services:
   - docker
 
 before_install:
-  - gem install bundler -v '< 2'
+  - gem 'aws-sdk', '~> 3'
   - docker build -t douglasrosa16/docker-back-postgres -f Dockerfile.dev .
 
 services:
@@ -21,10 +21,9 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "us-east-2"
-  app: "prestacaoservback"
-  env: "Prestacaoservback-env"
-  bucket_name: "bucket name"
-  bucket_path: "prestacaoservback"
+  app: "backendprestserv"
+  env: "Backendprestserv-env"
+  bucket_name: "backendprestserv"
   skip_cleanup: true
   on:
     branch: master
