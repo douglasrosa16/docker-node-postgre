@@ -1,5 +1,13 @@
 FROM node:alpine
-WORKDIR '/app'
+
+WORKDIR /usr/src/app
+
 COPY package.json .
-RUN npm install -g npm@7.20.0
+
+RUN npm install
+
 COPY . .
+
+EXPOSE 80
+
+CMD [ "npm", "start" ]
