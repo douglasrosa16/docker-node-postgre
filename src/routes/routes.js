@@ -17,6 +17,10 @@ const routes = express.Router();
 
 routes.use('/sessions', sessionsRouter);
 
+routes.get('/', (req, res) => {
+  return res.send('Batman');
+})
+
 routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
 routes.get('/users/:user_id/detail', UserController.show);
