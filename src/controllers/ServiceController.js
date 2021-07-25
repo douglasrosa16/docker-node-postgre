@@ -27,7 +27,7 @@ module.exports = {
       about: about,
       value: value
     });
-
+    console.log('chegou')
     return res.json(service);
   },
 
