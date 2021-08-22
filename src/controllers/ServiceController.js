@@ -7,6 +7,10 @@ module.exports = {
 
     const services = await Service.findAll({include: [{model: ServiceProvider, as: "service_providers"}], where: { id: service_provider_id }});
 
+    if(!services){
+      return res.status(400).json({ error: "Nenhum serviço encontrado para o Prestador de Serviço" })
+    }
+
     return res.json(services);
 },
 
@@ -27,23 +31,21 @@ module.exports = {
       about: about,
       value: value
     });
-    console.log('chegou')
+
     return res.json(service);
   },
 
   async show(req, res){
     //Trazer o serviço em específico
-    const { serv_prov_id } = req.params;
+    const { serv_id } = req.params;
 
-    const serv_provider = await ServiceProvider.findByPk(serv_prov_id);
+    const serv_provider = await Service.findOne({where: {id: serv_id} });
 
     if (!serv_provider) {
         return res.status(400).json({error: 'Prestador de Serviço não encontrado'});
     }
 
-    const service = await Service.create({
-      serv_prov_id,
-    });
+    const service = await Service.findOne({ where: { service_providers_id: serv_prov_id } });
 
     return res.json(service);
   }
