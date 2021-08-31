@@ -21,8 +21,8 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "us-west-2"
-  app: "serveplusbackend"
-  env: "Serveplusbackend-env"
+  app: "prest-serv-backend"
+  env: "Prestservbackend-env"
   bucket_name: "serveplus"
   skip_cleanup: true
   on:
