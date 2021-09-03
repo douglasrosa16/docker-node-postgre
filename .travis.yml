@@ -23,7 +23,7 @@ deploy:
   region: "us-east-1"
   app: "prest-serv-backend"
   env: "Prestservbackend-env"
-  bucket_name: "serveplus"
+  bucket_name: "elasticbeanstalk-us-east-1-059030135428"
   skip_cleanup: true
   on:
     branch: master
