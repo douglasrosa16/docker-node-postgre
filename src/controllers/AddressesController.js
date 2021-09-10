@@ -9,7 +9,6 @@ module.exports = {
             include: { association: 'addresses' }
         });
 
-
         return res.json(user.addresses);
     },
 

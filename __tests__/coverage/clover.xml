@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1626194144958" clover="3.2.0">
-  <project timestamp="1626194144958" name="All files">
-    <metrics statements="272" coveredstatements="145" conditionals="35" coveredconditionals="7" methods="49" coveredmethods="14" elements="356" coveredelements="166" complexity="0" loc="272" ncloc="272" packages="9" files="29" classes="29"/>
+<coverage generated="1631290363943" clover="3.2.0">
+  <project timestamp="1631290363944" name="All files">
+    <metrics statements="277" coveredstatements="140" conditionals="39" coveredconditionals="4" methods="50" coveredmethods="14" elements="366" coveredelements="158" complexity="0" loc="277" ncloc="277" packages="9" files="29" classes="29"/>
     <package name="src">
-      <metrics statements="12" coveredstatements="10" conditionals="4" coveredconditionals="1" methods="0" coveredmethods="0"/>
-      <file name="app.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/app.js">
+      <metrics statements="13" coveredstatements="10" conditionals="6" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <file name="app.js" path="/home/douglas/Documentos/prest_serv_backend/src/app.js">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -17,28 +17,29 @@
         <line num="14" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
       </file>
-      <file name="server.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/server.js">
-        <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
+      <file name="server.js" path="/home/douglas/Documentos/prest_serv_backend/src/server.js">
+        <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
       </file>
     </package>
     <package name="src.config">
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-      <file name="auth.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/config/auth.js">
+      <file name="auth.js" path="/home/douglas/Documentos/prest_serv_backend/src/config/auth.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
       </file>
-      <file name="database.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/config/database.js">
+      <file name="database.js" path="/home/douglas/Documentos/prest_serv_backend/src/config/database.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="90" coveredstatements="19" conditionals="14" coveredconditionals="0" methods="17" coveredmethods="0"/>
-      <file name="AddressesController.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/controllers/AddressesController.js">
+      <metrics statements="92" coveredstatements="19" conditionals="16" coveredconditionals="0" methods="17" coveredmethods="0"/>
+      <file name="AddressesController.js" path="/home/douglas/Documentos/prest_serv_backend/src/controllers/AddressesController.js">
         <metrics statements="14" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -46,16 +47,16 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
       </file>
-      <file name="ConsumerController.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/controllers/ConsumerController.js">
+      <file name="ConsumerController.js" path="/home/douglas/Documentos/prest_serv_backend/src/controllers/ConsumerController.js">
         <metrics statements="14" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -72,29 +73,31 @@
         <line num="31" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
       </file>
-      <file name="ServiceController.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/controllers/ServiceController.js">
-        <metrics statements="19" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="ServiceController.js" path="/home/douglas/Documentos/prest_serv_backend/src/controllers/ServiceController.js">
+        <metrics statements="21" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="45" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
       </file>
-      <file name="ServiceProviderController.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/controllers/ServiceProviderController.js">
+      <file name="ServiceProviderController.js" path="/home/douglas/Documentos/prest_serv_backend/src/controllers/ServiceProviderController.js">
         <metrics statements="14" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -111,7 +114,7 @@
         <line num="31" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
       </file>
-      <file name="TechController.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/controllers/TechController.js">
+      <file name="TechController.js" path="/home/douglas/Documentos/prest_serv_backend/src/controllers/TechController.js">
         <metrics statements="11" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -125,7 +128,7 @@
         <line num="23" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
       </file>
-      <file name="UserController.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/controllers/UserController.js">
+      <file name="UserController.js" path="/home/douglas/Documentos/prest_serv_backend/src/controllers/UserController.js">
         <metrics statements="18" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -149,7 +152,7 @@
     </package>
     <package name="src.database">
       <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/index.js">
+      <file name="index.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/index.js">
         <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -177,43 +180,43 @@
     </package>
     <package name="src.database.migrations">
       <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="0"/>
-      <file name="20210427162850-create-users.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210427162850-create-users.js">
+      <file name="20210427162850-create-users.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210427162850-create-users.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
       </file>
-      <file name="20210504162228-user-addresses.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210504162228-user-addresses.js">
+      <file name="20210504162228-user-addresses.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210504162228-user-addresses.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
       </file>
-      <file name="20210507155446-create-techs.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210507155446-create-techs.js">
+      <file name="20210507155446-create-techs.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210507155446-create-techs.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
       </file>
-      <file name="20210507155610-create-user-techs.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210507155610-create-user-techs.js">
+      <file name="20210507155610-create-user-techs.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210507155610-create-user-techs.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
       </file>
-      <file name="20210628155201-create-user-consumers.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210628155201-create-user-consumers.js">
+      <file name="20210628155201-create-user-consumers.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210628155201-create-user-consumers.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
       </file>
-      <file name="20210628155231-create-user-service-providers.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210628155231-create-user-service-providers.js">
+      <file name="20210628155231-create-user-service-providers.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210628155231-create-user-service-providers.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
       </file>
-      <file name="20210628160133-create-user-services.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/database/migrations/20210628160133-create-user-services.js">
+      <file name="20210628160133-create-user-services.js" path="/home/douglas/Documentos/prest_serv_backend/src/database/migrations/20210628160133-create-user-services.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -222,7 +225,7 @@
     </package>
     <package name="src.middlewares">
       <metrics statements="16" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="verifyAuth.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/middlewares/verifyAuth.js">
+      <file name="verifyAuth.js" path="/home/douglas/Documentos/prest_serv_backend/src/middlewares/verifyAuth.js">
         <metrics statements="16" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -244,42 +247,42 @@
     </package>
     <package name="src.models">
       <metrics statements="44" coveredstatements="27" conditionals="5" coveredconditionals="0" methods="15" coveredmethods="12"/>
-      <file name="Address.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/Address.js">
+      <file name="Address.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/Address.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
       </file>
-      <file name="Consumer.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/Consumer.js">
+      <file name="Consumer.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/Consumer.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
-      <file name="Service.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/Service.js">
+      <file name="Service.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/Service.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
       </file>
-      <file name="ServiceProvider.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/ServiceProvider.js">
+      <file name="ServiceProvider.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/ServiceProvider.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
-      <file name="Tech.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/Tech.js">
+      <file name="Tech.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/Tech.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
-      <file name="User.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/User.js">
+      <file name="User.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/User.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
@@ -289,7 +292,7 @@
         <line num="21" count="1" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
       </file>
-      <file name="index.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/models/index.js">
+      <file name="index.js" path="/home/douglas/Documentos/prest_serv_backend/src/models/index.js">
         <metrics statements="17" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -311,9 +314,9 @@
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="44" coveredstatements="43" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="routes.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/routes/routes.js">
-        <metrics statements="29" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="46" coveredstatements="41" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="routes.js" path="/home/douglas/Documentos/prest_serv_backend/src/routes/routes.js">
+        <metrics statements="31" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -326,14 +329,13 @@
         <line num="14" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
@@ -343,44 +345,47 @@
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
       </file>
-      <file name="sessions.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/routes/sessions.js">
-        <metrics statements="15" coveredstatements="14" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="sessions.js" path="/home/douglas/Documentos/prest_serv_backend/src/routes/sessions.js">
+        <metrics statements="15" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="19" coveredstatements="17" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="Authenticate.js" path="/home/douglas/Documentos/tcc-project/docker-back-postgres/src/services/Authenticate.js">
-        <metrics statements="19" coveredstatements="17" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <metrics statements="19" coveredstatements="14" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Authenticate.js" path="/home/douglas/Documentos/prest_serv_backend/src/services/Authenticate.js">
+        <metrics statements="19" coveredstatements="14" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
