@@ -18,7 +18,7 @@ const routes = express.Router();
 routes.use('/sessions', sessionsRouter);
 
 routes.get('/', (req, res) => {
-  return res.send('Maikon Hacker');
+  return res.send('Página inicial');
 })
 
 routes.get('/users', UserController.index);
